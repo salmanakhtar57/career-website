@@ -10,7 +10,7 @@
   <body>
     <div class="container" style="margin-top: 35px;">
       <div style="text-align: center;">
-      <h1>WE WORK REMOTELY</h1>
+      <h1>{{ company_name }} REMOTE</h1>
       </div>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
          been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
@@ -22,7 +22,14 @@
         
 
       <h2>Open Positions</h2>
-    <p>Show the jobs here</p>
+    <div>
+      {% for job in jobs %}
+      <div>
+        <h4>{{job['title']}}</h4> 
+        <div> <b> Location: </b> {{job['location']}} </div>
+      </div>
+      {% endfor %}
+    </div>
 
     <button type="submit" class="btn btn-primary btn-lg">Contact Us</button>
 
