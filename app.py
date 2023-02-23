@@ -18,14 +18,13 @@ JOBS = [
   {
     'id': 3,
     'title': 'React Developer',
-    'location': 'New York, USA',
-    'salary': '10,000'
+    'location': 'Remote',
   },
   {
     'id': 4,
     'title': 'Data Engineer',
     'location': 'Absterdam, Netherlands',
-    'salary': '150,000'
+    'salary': ''
   },
 ]
 
